@@ -18,7 +18,7 @@ else if (WORD_PICK_METHOD == 'seed')
     let currentDate = new Date();
     let seed = currentDate.getDate();
     let derp = seed / WORDS.length;
-    rightGuessString = WORDS[Math.round(derp)].toLowerCase();
+    rightGuessString = WORDS[Math.round(seed)].toLowerCase();
     if (DEBUG == true) { console.log('PICK METHOD IS SEEDED. USING SEED ' + Math.round(derp)); }
 }
 let wordLength = rightGuessString.length;
