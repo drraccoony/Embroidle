@@ -1,0 +1,131 @@
+:root {
+    --main-guess-correct: #459e74;
+    --main-guess-incorrect: #6c757d;
+    --main-guess-close: #b38705;
+
+    --main-letter-border: gray;
+
+    --main-keyboard-bg: #7373bb;
+    --main-keyboard-color: #d8c7e7;
+    
+  }
+  
+  /* var(--main-bg-color) */
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .letter-box {
+    border: 2px solid var(--main-letter-border);
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .letter-box:after {
+    mix-blend-mode: difference;
+  }
+  
+  .filled-box {
+    border: 2px solid black;
+  }
+  
+  .letter-row {
+    display: flex;
+  }
+
+  #keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #keyboard-cont div {
+    display: flex;
+  }
+  
+  .second-row {
+    margin: 0.5rem 0;
+  }
+  
+  .keyboard-button {
+    /* Default styles */
+    background-color: var(--main-keyboard-bg);
+    color: var(--main-keyboard-color);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    height: 50px;
+    min-width: 50px;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  /* Styles for large viewports */
+  @media (min-width: 576px) {
+    .keyboard-button {
+      min-width: 50px;
+    }
+  }
+  
+  /* Styles for small viewports */
+  @media (max-width: 575px) {
+    .keyboard-button {
+      min-width: 15px;
+    }
+  }
+  
+.ex-good {
+    border: 2px solid var(--main-letter-border);
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--main-guess-correct)
+}
+.ex-gray {
+    border: 2px solid var(--main-letter-border);
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--main-guess-incorrect)
+}
+.ex-close {
+    border: 2px solid var(--main-letter-border);
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--main-guess-close)
+}
