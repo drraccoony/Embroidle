@@ -1,7 +1,7 @@
 import { WORDS } from "./words.js";
 
 // You can configure some stuff here
-const DEBUG = true;                 // Debug output to console
+const DEBUG = false;                 // Debug output to console
 const WORD_PICK_METHOD = 'seed'     // Daily seed or random
 
 // End of user definable configuration
