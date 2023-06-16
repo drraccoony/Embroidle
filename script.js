@@ -22,7 +22,8 @@ else if (WORD_PICK_METHOD == 'seed')
 
     // rightGuessString = WORDS[Math.round(temp)].toLowerCase();
     rightGuessString = WORDS[temp].toLowerCase();
-    if (DEBUG == true) { console.log('PICK METHOD IS SEEDED. USING SEED ' + Math.round(derp)); }
+    // if (DEBUG == true) { console.log('PICK METHOD IS SEEDED. USING SEED ' + Math.round(derp)); }
+    if (DEBUG == true) { console.log('PICK METHOD IS SEEDED.'); }
 }
 let wordLength = rightGuessString.length;
 const MAX_GUESSES = Math.min(7, Math.max(4, Math.floor(wordLength / 2) + 3));
